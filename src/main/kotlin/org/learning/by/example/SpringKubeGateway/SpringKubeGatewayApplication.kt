@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class SpringKubeGatewayApplication
 
 fun main(args: Array<String>) {
-    runApplication<SpringKubeGatewayApplication>(*args)
+  runApplication<SpringKubeGatewayApplication>(*args)
 }
