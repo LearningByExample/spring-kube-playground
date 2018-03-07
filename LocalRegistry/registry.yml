@@ -73,7 +73,7 @@ spec:
   template:
     metadata:
       labels:
-        k8s-app: kube-registry
+        k8s-app: kube-registry-proxy
         version: v0.4
     spec:
       containers:
