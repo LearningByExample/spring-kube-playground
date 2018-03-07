@@ -6,8 +6,6 @@ To create the registry run:
 
 ```bash
 $ kubectl create -f registry.yml
-$ minikube ssh
-$ curl http://localhost:5000/v2/_catalog
 ```
 
 To check that the registry is working in the kubernetes cluster
