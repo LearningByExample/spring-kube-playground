@@ -2,7 +2,7 @@
 
 A Eureka Server for testing the new Spring Cloud Gateway
 
-First you need to compiler this project:
+First you need to compile this project:
 
 ```bash
 $ mvnw clean package
