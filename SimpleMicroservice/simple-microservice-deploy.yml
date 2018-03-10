@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: simple-microservice-v0
+  labels:
+    k8s-app: simple-microservice
+    version: v0
+spec:
+  replicas: 3
+  selector:
+    k8s-app: simple-microservice
+    version: v0
+  template:
+    metadata:
+      labels:
+        k8s-app: simple-microservice
+        version: v0
+    spec:
+      containers:
+      - name: simple-microservice
+        image: localhost:5000/simple-microservice
+        env:
+        - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+          value: "http://$${EUREKA_SERVER_SERVICE_HOST}:$${EUREKA_SERVER_SERVICE_PORT}/eureka/"
+        ports:
+        - containerPort: 8080
+          name: microservice
+          protocol: TCP
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-microservice
+  labels:
+    k8s-app: simple-microservice
+spec:
+  selector:
+    k8s-app: simple-microservice
+  ports:
+  - name: microservice
+    port: 8080
+    protocol: TCP
+  type: NodePort
