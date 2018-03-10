@@ -63,6 +63,6 @@ You could check the contents of the registry doing
 
 ```bash
 $ minikube ssh
-$ curl http://locahost:5000/v2/_catalog
+$ curl http://localhost:5000/v2/_catalog
 {"repositories":["hello"]}
 ```
