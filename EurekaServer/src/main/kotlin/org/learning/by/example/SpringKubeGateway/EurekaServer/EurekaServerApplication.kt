@@ -9,5 +9,5 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer
 class EurekaServerApplication
 
 fun main(args: Array<String>) {
-    runApplication<EurekaServerApplication>(*args)
+  runApplication<EurekaServerApplication>(*args)
 }
