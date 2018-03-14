@@ -3,3 +3,6 @@ server:
 spring:
   application:
     name: EurekaServer
+logging:
+  level:
+    org.springframework: DEBUG
