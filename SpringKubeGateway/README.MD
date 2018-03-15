@@ -5,4 +5,6 @@ A Spring Cloud Gateway with Kubernetes support
 
 ## info
 
-TBD
+http://localhost/simplemicroservice/hello
+
+http://localhost/hello
