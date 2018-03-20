@@ -7,7 +7,3 @@ eureka:
      defaultZone: http://localhost:8761/eureka/
 server:
   port: 80
-logging:
-  level:
-    org.springframework: DEBUG
-    reactor: DEBUG

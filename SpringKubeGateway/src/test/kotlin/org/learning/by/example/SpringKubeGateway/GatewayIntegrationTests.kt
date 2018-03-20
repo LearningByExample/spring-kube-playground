@@ -14,6 +14,7 @@ import org.springframework.boot.web.server.LocalServerPort
 import org.springframework.cloud.client.DefaultServiceInstance
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient
 import org.springframework.http.HttpStatus
+import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit4.SpringRunner
 import org.springframework.test.web.reactive.server.WebTestClient
 
@@ -23,6 +24,7 @@ import org.springframework.test.web.reactive.server.WebTestClient
     webEnvironment = RANDOM_PORT, properties = [
   "eureka.client.enabled=false",
   "spring.cloud.discovery.client.simple.instances.simplemicroservice[0].uri=http://localhost"])
+@ActiveProfiles("test")
 class GatewayIntegrationTests {
 
   @LocalServerPort
