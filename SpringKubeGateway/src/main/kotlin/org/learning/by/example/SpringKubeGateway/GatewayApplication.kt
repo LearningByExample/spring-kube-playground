@@ -10,7 +10,9 @@ import org.springframework.context.annotation.Bean
 @SpringBootApplication
 @EnableDiscoveryClient
 class GatewayApplication {
+
   @Bean
   fun discoveryClientRouteLocator(discoveryClient: DiscoveryClient) =
       DiscoveryClientRouteDefinitionLocator(discoveryClient)
+
 }

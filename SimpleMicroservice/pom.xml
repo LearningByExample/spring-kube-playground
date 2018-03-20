@@ -62,6 +62,13 @@
       <artifactId>reactor-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.amshove.kluent</groupId>
+      <artifactId>kluent</artifactId>
+      <version>1.22</version>
+    </dependency>
+
   </dependencies>
 
   <dependencyManagement>
@@ -114,6 +121,19 @@
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
+    </repository>
+    <repository>
+      <id>jcenter</id>
+      <url>http://jcenter.bintray.com </url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
     </repository>
   </repositories>
 

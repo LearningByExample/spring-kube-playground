@@ -9,7 +9,6 @@ import java.util.*
 
 @Component
 class SimpleHandler(val simpleService: SimpleService) {
-
   companion object {
     val id = UUID.randomUUID().toString()
   }
