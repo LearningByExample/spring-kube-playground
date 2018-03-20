@@ -22,17 +22,10 @@ Finally, start the gateway with:
 $ mvnw spring-boot:run
 ```
 
-You could invoke any server in eureka in the format offormat `http://localhost/NAME-IN-EUREKA/method`, for example:
+You could invoke any server in eureka in the format off `http://localhost/NAME-IN-EUREKA/method`, for example:
 
 ```bash
 $ curl http://localhost/simplemicroservice/hello
-```
-
-For testing porpoise a specific route has been create for the simple microservice:
-
-
-```bash
-$ curl http://localhost/hello
 ```
 
 ## run it in the kubernertes cluster
