@@ -30,4 +30,37 @@ $ curl http://localhost/simplemicroservice/hello
 
 ## run it in the kubernertes cluster
 
-TBD
+First you need to compile this project:
+
+```bash
+$ mvnw clean package
+```
+
+Before continue you need to have your local registry running on the cluster:
+
+ [LocalRegistry](../LocalRegistry/) 
+
+Then, build the docker image and push it to a local registry
+
+```bash
+$ docker build . -t gateway
+$ docker tag gateway localhost:5000/gateway
+$ docker push localhost:5000/gateway
+```
+
+And finally add it to the kubernetes cluster with:
+
+```bash
+$ kubectl create -f gateway-deploy.yml
+```
+Now we could invoke the Microservice in with:
+
+```bash
+$ minikube service gateway
+```
+
+and change the url to `http://service-url/NAME-IN-EUREKA/method`, for example:
+                                          
+```bash
+$ curl http://192.168.99.100:30418/simplemicroservice/hello
+```
