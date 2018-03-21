@@ -8,16 +8,15 @@ import org.springframework.web.reactive.function.server.body
 import org.springframework.web.reactive.function.server.router
 import reactor.core.publisher.toMono
 
+fun getHello(serverRequest: ServerRequest) = ServerResponse.ok()
+        .body("world".toMono())
+
 @Configuration
 class FakeEndPoint {
-
-  fun getHello(serverRequest: ServerRequest) = ServerResponse.ok()
-      .body("world".toMono())
-
-  @Bean
-  fun routes() = router {
-    "/hello".nest {
-      GET("/", ::getHello)
+    @Bean
+    fun routes() = router {
+        "/hello".nest {
+            GET("/", ::getHello)
+        }
     }
-  }
 }
