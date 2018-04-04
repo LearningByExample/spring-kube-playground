@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: eureka-server-v0
+  name: eureka-server
   labels:
     k8s-app: eureka-server
     version: v0
@@ -17,12 +17,12 @@ spec:
         version: v0
     spec:
       containers:
-      - name: eureka
-        image: localhost:5000/eureka
+      - name: eureka-server
+        image: localhost:5000/eureka-server
         env:
         ports:
         - containerPort: 8761
-          name: eureka
+          name: eureka-server
           protocol: TCP
 ---
 
@@ -36,7 +36,7 @@ spec:
   selector:
     k8s-app: eureka-server
   ports:
-  - name: eureka
+  - name: eureka-server
     port: 8761
     protocol: TCP
   type: NodePort
