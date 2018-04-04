@@ -1,4 +1,4 @@
-# SpringKubeGateway
+# Spring Kubernetes Gateway
 A Spring Cloud Gateway with Kubernetes support
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
@@ -38,7 +38,7 @@ $ mvnw clean package
 
 Before continue you need to have your local registry running on the cluster:
 
- [LocalRegistry](../LocalRegistry/) 
+ [Local Registry](../local-registry/)
 
 Then, build the docker image and push it to a local registry
 
@@ -60,7 +60,7 @@ $ minikube service gateway
 ```
 
 and change the url to `http://service-url/NAME-IN-EUREKA/method`, for example:
-                                          
+
 ```bash
 $ curl http://192.168.99.100:30418/simplemicroservice/hello
 ```
