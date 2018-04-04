@@ -1,4 +1,4 @@
-package org.learning.by.example.SpringKubeGateway
+package org.learning.by.example.spring.kube.playground.spring.kube.gateway
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.After
