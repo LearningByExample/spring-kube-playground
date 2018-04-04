@@ -10,7 +10,7 @@ $ mvnw clean package
 
 Before continue you need to have your local registry running on the cluster:
 
- [LocalRegistry](../LocalRegistry/) 
+ [Local Registry](../local-registry/) 
 
 Then, build the docker image and push it to a local registry
 
