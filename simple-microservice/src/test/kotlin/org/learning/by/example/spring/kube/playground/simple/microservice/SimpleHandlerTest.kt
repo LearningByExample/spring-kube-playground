@@ -1,4 +1,4 @@
-package org.learning.by.example.SpringKubeGateway.SimpleMicroservice
+package org.learning.by.example.spring.kube.playground.simple.microservice
 
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.reset

@@ -1,4 +1,4 @@
-package org.learning.by.example.SpringKubeGateway.SimpleMicroservice
+package org.learning.by.example.spring.kube.playground.simple.microservice
 
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.server.ServerRequest

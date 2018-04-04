@@ -1,4 +1,4 @@
-package org.learning.by.example.SpringKubeGateway.SimpleMicroservice
+package org.learning.by.example.spring.kube.playground.simple.microservice
 
 import org.amshove.kluent.`should be greater or equal to`
 import org.amshove.kluent.`should be in`
@@ -14,7 +14,7 @@ class SimpleServiceImplTest : SimpleServiceImpl() {
     val message = simpleServiceImpl.getMessage()
 
     message.`should not be blank`()
-    message `should be in` SimpleServiceImpl.salutes
+    message `should be in` salutes
   }
 
   @Test

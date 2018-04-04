@@ -1,4 +1,4 @@
-package org.learning.by.example.SpringKubeGateway.SimpleMicroservice
+package org.learning.by.example.spring.kube.playground.simple.microservice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.Bean

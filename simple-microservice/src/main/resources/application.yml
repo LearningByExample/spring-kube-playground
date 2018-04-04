@@ -1,6 +1,6 @@
 spring:
   application:
-    name: SimpleMicroservice
+    name: simple-microservice
 eureka:
   client:
     serviceUrl:
