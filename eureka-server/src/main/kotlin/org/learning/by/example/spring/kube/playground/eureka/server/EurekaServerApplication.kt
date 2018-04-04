@@ -1,4 +1,4 @@
-package org.learning.by.example.spring.kube.playground.eureka
+package org.learning.by.example.spring.kube.playground.eureka.server
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
