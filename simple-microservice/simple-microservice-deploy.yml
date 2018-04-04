@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: simple-microservice-v0
+  name: simple-microservice
   labels:
     k8s-app: simple-microservice
     version: v0
