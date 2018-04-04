@@ -12,9 +12,9 @@ The gateway could be run locally or expose in a kubernetes cluster.
 
 ## run it locally
 
-First, you need to have running the Eureka on your computer, for example the provided [EurekaServer](../EurekaServer/).
+First, you need to have running the Eureka on your computer, for example the provided by the [Eureka Server](../eureka-server/).
 
-Then, you need some microservices running in eureka, such the provide [SimpleMicroservice](../SimpleMicroservice/)
+Then, you need some microservices running in eureka, such the provided by the [Simple Microservice](../simple-microservice/)
 
 Finally, start the gateway with:
 
