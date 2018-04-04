@@ -1,4 +1,4 @@
-package org.learning.by.example.SpringKubeGateway.EurekaServer
+package org.learning.by.example.spring.kube.playground.eureka
 
 import org.junit.Test
 import org.junit.runner.RunWith
