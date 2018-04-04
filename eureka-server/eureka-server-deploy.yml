@@ -22,7 +22,7 @@ spec:
         env:
         ports:
         - containerPort: 8761
-          name: eureka-server
+          name: eureka
           protocol: TCP
 ---
 
@@ -36,7 +36,7 @@ spec:
   selector:
     k8s-app: eureka-server
   ports:
-  - name: eureka-server
+  - name: eureka
     port: 8761
     protocol: TCP
   type: NodePort
