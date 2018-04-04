@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.learning.by.example</groupId>
-  <artifactId>SpringKubeGateway</artifactId>
+  <groupId>org.learning.by.example.spring-kube-playground</groupId>
+  <artifactId>spring-kube-gateway</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>SpringKubeGateway</name>
+  <name>spring-kube-gateway</name>
   <description>Demo project for Spring Boot</description>
 
   <parent>
@@ -25,7 +25,7 @@
     <kotlin.version>1.2.20</kotlin.version>
     <spring-cloud.version>Finchley.M8</spring-cloud.version>
   </properties>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
