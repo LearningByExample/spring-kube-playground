@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejre8:slim
+FROM openjdk:8
 MAINTAINER Juan Medina <jamedina@gmail.com>
 
 VOLUME /tmp

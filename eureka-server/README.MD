@@ -10,13 +10,13 @@ $ mvnw clean package
 
 Before continue you need to have your local registry running on the cluster:
 
- [Local Registry](../local-registry/) 
+ [Local Registry](../local-registry/)
 
 Then, build the docker image and push it to a local registry
 
 ```bash
 $ docker build . -t eureka-server
-$ docker tag eureka localhost:5000/eureka-server
+$ docker tag eureka-server localhost:5000/eureka-server
 $ docker push localhost:5000/eureka-server
 ```
 
